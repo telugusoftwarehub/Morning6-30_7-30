@@ -1,0 +1,148 @@
+/* local fonts loading*/
+@font-face {
+    font-family: "Muli-R";
+    src: url("../fonts/muli/Muli-Regular.ttf")
+}
+@font-face {
+    font-family: "Muli-L";
+    src: url("../fonts/muli/Muli-Light.ttf")
+}
+@font-face {
+    font-family: "Muli-I";
+    src: url("../fonts/muli/Muli-Italic.ttf")
+}
+@font-face {
+    font-family: "Muli-LI";
+    src: url("../fonts/muli/Muli-LightItalic.ttf")
+}
+
+:root {
+    --tl_purpul: #41246d;
+    --tl_light_grey: #ededec;
+    --tl_link_color: #f5b417;
+    --tl_color_white: #ffffff;
+    --tl_color_pink: #f24080
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* config for colors and font */
+.tl_solid_gradient {
+    background-image: linear-gradient(180deg, var(--tl_purpul) 84%, var(--tl_light_grey) 10%);
+}
+/* End */
+
+/* Layout */
+.tl_flex {
+    display: flex;
+}
+.tl_flex_dir {
+    flex-direction: column;
+}
+.tl_wrap {
+    width: 1170px;
+    margin: 0 auto;
+}
+.tl_row {
+    padding: 8px 0;
+}
+/* End */
+
+
+/* Containers */
+.tl_container_fluid {
+    width: 100%;
+    padding: 1%;
+}
+.tl_col {
+    width: 20%;
+}
+.tl_nav_bar {
+    width: 62%;
+}
+.tl_nav {
+    justify-content: flex-end;
+}
+.tl_user_location {
+    width: 18%;
+    font-family: "Muli-R";
+    font-size: 12px;
+    font-weight: 900;
+}
+
+/* Containers End */
+.tl_top_nav {
+    justify-content:center;
+    flex-grow: 3;
+}
+
+.tl_nav_bar nav .tl_nav_link a.tl_cta_link{
+    text-decoration: none;
+    padding: 10px 15px;
+    color: var(--tl_color_white);
+    font-family: "Muli-R";
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    line-height: 18px;
+}
+
+.tl_nav_bar nav .tl_nav_link a.tl_cta_link.active {
+    background-color: var(--tl_link_color);
+}
+.tl_user_location{
+    color: var(--tl_color_white)
+}
+
+/* Responsive */
+/* CSS Sprte */
+.icon {
+    width: 69px;
+    height: 84px;
+    background: url("../images/icons_sprint.png") no-repeat var(--tl_color_pink);/* Short hand notation*/
+    cursor: pointer;
+    margin-bottom: 2px;
+}
+
+.icon.fb{
+    background-position: -6px 0;
+}
+
+.icon.fb:hover{
+    background-position: -6px -84px;
+}
+
+.icon.gPlus{
+    background-position: -255px 0;
+}
+
+.icon.gPlus:hover{
+    background-position: -255px -84px; /* x y*/
+}
+
+.icon.linkedIn{
+    background-position: -340px 0;
+}
+
+.icon.linkedIn:hover{
+    background-position: -340px -84px; /* x y*/
+}
+
+.icon.youTube{
+    background-position: -844px 0;
+}
+
+.icon.youTube:hover{
+    background-position: -844px -84px; /* x y*/
+}
+
+/* Positions */
+.socialMediaIcons {
+    position: fixed;
+    right: 0;
+}
+
+/* End */
