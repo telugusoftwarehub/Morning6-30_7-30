@@ -21,7 +21,8 @@
     --tl_light_grey: #ededec;
     --tl_link_color: #f5b417;
     --tl_color_white: #ffffff;
-    --tl_color_pink: #f24080
+    --tl_color_pink: #f24080;
+    --tl_color_black: #000000;
 }
 
 * {
@@ -138,11 +139,42 @@
 .icon.youTube:hover{
     background-position: -844px -84px; /* x y*/
 }
+/* End */
+
+/* Font Awesome Icons*/
+.tl_font_awesome .tl_fa_icon{
+    /* width: 50px; */
+    /* height: 50px; */
+    padding: 10px;
+    /* border: 1px solid #000; */
+    text-align: center;
+    font-size: 20px;
+    background-color: var(--tl_color_pink);
+    color: var(--tl_color_white);
+    position: relative;
+    margin-bottom: 2px;
+    /* vertical-align: middle; */
+}
+.tl_font_awesome .tl_fa_icon .tl_tooltip {
+    display: none;
+}
+
+.tl_font_awesome .tl_fa_icon:hover .tl_tooltip {
+    display: inline-block;
+    background-color: var(--tl_color_black);
+    position: absolute;
+    right: 47px;
+    width: 100px;
+    padding: 13px;
+    top: 0;
+    font-size: 15px;
+}
 
 /* Positions */
 .socialMediaIcons {
     position: fixed;
     right: 0;
+    top: 300px;
 }
 
 /* End */
