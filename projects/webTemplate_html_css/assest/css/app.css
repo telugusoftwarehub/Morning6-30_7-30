@@ -1,3 +1,11 @@
+/*
+* Author: Sai
+Follow Standards
+End of and End line dont use semicolon
+
+*/
+
+
 /* local fonts loading*/
 @font-face {
     font-family: "Muli-R";
@@ -16,6 +24,7 @@
     src: url("../fonts/muli/Muli-LightItalic.ttf")
 }
 
+/* Gobal Variable Def */
 :root {
     --tl_purpul: #41246d;
     --tl_light_grey: #ededec;
@@ -24,6 +33,7 @@
     --tl_color_pink: #f24080;
     --tl_color_black: #000000;
 }
+/* END */
 
 * {
     margin: 0;
@@ -153,10 +163,12 @@
     color: var(--tl_color_white);
     position: relative;
     margin-bottom: 2px;
+    cursor: pointer;
     /* vertical-align: middle; */
 }
 .tl_font_awesome .tl_fa_icon .tl_tooltip {
     display: none;
+    transition: 0.2s;
 }
 
 .tl_font_awesome .tl_fa_icon:hover .tl_tooltip {
@@ -168,6 +180,7 @@
     padding: 13px;
     top: 0;
     font-size: 15px;
+    opacity: 0.2;
 }
 
 /* Positions */
@@ -178,3 +191,75 @@
 }
 
 /* End */
+
+/* Social Media Icons Animation */
+.socialMediaIcons .tl_fa_icon {
+    right: 0;
+    transition: 0.5s;
+}
+
+.socialMediaIcons .tl_fa_icon:hover {
+    right: 10px;
+}
+/* End */
+
+/* Carousel  Start */
+
+.tl_carousel .slide_1 {
+    height: 641px;
+    width: auto;
+    background-image: url("../images/slider-4.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.tl_carousel_content {
+    width: auto;
+    position: absolute;
+    top: 100px;
+    right: 200px;
+    font-family: "Muli-R";
+}
+.tl_carousel_content p {
+    color: var(--tl_color_pink)
+}
+.tl_carousel_content .highlight_text{
+    color: var(--tl_purpul);
+    font-size: 63px;
+    font-weight:900;
+    line-height: 50px;
+}
+.tl_carousel_content .categories select {
+    display: none;
+}
+.tl_carousel_content .categories .tl_custom_select {
+    padding: 20px;
+}
+.tl_carousel_content .categories .tl_custom_select .select {
+    background-color: var(--tl_color_white);
+    padding: 10px;
+    cursor: pointer
+}
+.tl_carousel_content .categories .tl_custom_select .btn button{
+    padding: 15px;
+    border: none;
+    background-color: var(--tl_color_pink);
+    color: var(--tl_color_white);
+    transition: 0.5s;
+    cursor: pointer
+}
+.tl_carousel_content .categories .tl_custom_select .btn button:hover {
+    background-color: var(--tl_purpul);
+}
+/* .tl_carousel img {
+    width: 100%;
+    height: 100%;
+} */
+/* End */
+
+/* SIT -  Server Integartion Testing - Interanet- ofz
+UAT - User Acceptation Testing */
+
+
+/* Social Media Icons Animation End */

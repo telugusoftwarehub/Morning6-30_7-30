@@ -44,10 +44,35 @@
                 <div class="tl_user_location">
                     <p><i class="fa fa-map-marker"></i>123 6th St. Melbourne, FL 32904</p>
                 </div>
+            </header>
+            <section class="tl_carousel">
+                <div class="slide_1">
+                    <div class="tl_carousel_content">
+                        <p>Language School</p>
+                        <div class="highlight_text" id="line_1">&nbsp;</div>
+                        <div class="highlight_text" id="line_2">&nbsp;</div>
+                        <!-- <h1></h1> -->
+                        <div class="categories">
+                            <select>
+                                <option> All Categories </option>
+                            </select>
+                            <div class="tl_custom_select tl_flex">
+                                <div class="select">
+                                    <span>All Categories</span>
+                                    <i class="fa fa-caret-down"></i>
+                                </div>
+                                <div class="btn">
+                                    <button> Find a course</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
-        </header>
     </div>
-
+    
+    <!-- Social Medai Icons -->
     <div class="socialMediaIcons">
         <div class="tl_flex tl_flex_dir tl_font_awesome">
             <div class="tl_fa_icon">
@@ -73,6 +98,13 @@
         </div>
     </div>
 
-</body>
+    <script>
+        var line_1 = "Any Language";
+        var line_2 = "You Want!";
 
+        document.getElementById("line_1").innerText = line_1;
+        document.getElementById("line_2").innerText = line_2;
+
+    </script>
+</body>
 </html>
