@@ -9,7 +9,10 @@ body {
     font-family: 'Roboto', sans-serif;
     /* font-size: 100%; */
 }
-
+/* 
+comment/uncomment
+ctrl + /
+comman + / */
 .wrap {
     width: 300px;
     margin: 0 auto;
@@ -74,13 +77,16 @@ body div.second#priority h2 {
 /* 
     background-image: ;
     background-repeat: ;
-    background-position: ; */
+    background-position: ;
+    webpack - config
+    */
 }
 .block_1 {
     background-color: red;
     top: 50px;
     left: 50px;
     z-index: 9;
+    padding: 0;
 }
 
 
