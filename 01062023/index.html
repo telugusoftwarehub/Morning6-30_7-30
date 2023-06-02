@@ -68,15 +68,17 @@
 
         // console.log("user 2nd time - outside: ", user)
 
-        function myFunction() {//parameters passing -  pass by value, pass by reference
+        function myFunction(username, email, id) {//parameters passing -  pass by value, pass by reference
+            var a = 1;
             console.log("arguments: ", arguments);
-            // console.log("First Name: ", firstname);
-            // console.log("Last Name: ", lastname);
-            // console.log("Email:  ", email);
-            // console.log("Id: ", id);
-            // console.log("Emplyee ID: ", id)
+            console.log("First Name: ", firstname);
+            console.log("Last Name: ", lastname);
+            console.log("Email:  ", email);
+            console.log("Id: ", id);
+            console.log("Emplyee ID: ", id)
             console.log("------------------------")
         }
+        console.log(username)
 
         myFunction("Sai", "sai@abc.com");
         myFunction("Smith", "Will", "smith@gmail.com", "420");
