@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 400px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+.inpt {
+    padding: 20px;
+    width: 360px;
+}
+
+button {
+    padding: 10px 25px;
+    margin-top: 5px;
+    border: none;
+    background-color: bisque;
+    color: #000;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li{
+    padding: 10px;
+}
+
+ul li:nth-child(even){
+    background-color: #cfcfcf;
+}
